@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>tank.qml</file>
+        <file>logic.js</file>
+<!--        <file>resources/tant_1_star.png</file>-->
+    </qresource>
+</RCC>
