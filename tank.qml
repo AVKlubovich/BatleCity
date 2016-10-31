@@ -14,6 +14,7 @@ Image
     y: 200
 
     focus: true
+
     Keys.onUpPressed: {
         if (rotation !== 0) {
             rotation = 0

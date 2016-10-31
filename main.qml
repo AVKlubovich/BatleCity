@@ -34,7 +34,7 @@ Window
 
                 text: qsTr("New")
 
-                implicitWidth: 100
+                width: 100
 
                 onClicked:
                 {
@@ -48,7 +48,7 @@ Window
 
                 text: qsTr("Cancel")
 
-                implicitWidth: 100
+                width: 100
             }
         }
 
@@ -71,6 +71,96 @@ Window
                 width: 13 * tileSize
                 height: 13 * tileSize
                 color: "black"
+            }
+
+            Button
+            {
+                id: buttonLeft
+
+                width: tileSize * 0.8
+                height: tileSize * 0.8
+
+                x: tileSize * 0.1
+                y: 500
+
+                text: "L"
+
+                style:  ButtonStyle {
+                    background: Rectangle {
+                        color: "red"
+                        radius: 15
+                    }
+                }
+            }
+
+            Button
+            {
+                id: buttonRight
+
+                width: tileSize * 0.8
+                height: tileSize * 0.8
+
+                x: tileSize * 0.1
+                y: 500 + tileSize
+
+                text: "R"
+
+                style:  ButtonStyle {
+                    background: Rectangle {
+                        color: "red"
+                        radius: 15
+                    }
+                }
+            }
+
+            Button
+            {
+                id: buttonUp
+
+                width: tileSize * 0.8
+                height: tileSize * 0.8
+
+                x: tileSize * 14 + tileSize * 0.1
+                y: 500
+
+                text: "U"
+
+                style:  ButtonStyle {
+                    background: Rectangle {
+                        color: "red"
+                        radius: 15
+                    }
+                }
+
+                onClicked:
+                {
+                    Logic.moveTank()
+                }
+            }
+
+            Button
+            {
+                id: buttonDown
+
+                width: tileSize * 0.8
+                height: tileSize * 0.8
+
+                x: tileSize * 14 + tileSize * 0.1
+                y: 500 + tileSize
+
+                text: "D"
+
+                style:  ButtonStyle {
+                    background: Rectangle {
+                        color: "red"
+                        radius: 15
+                    }
+                }
+
+                onClicked:
+                {
+
+                }
             }
         }
     }
